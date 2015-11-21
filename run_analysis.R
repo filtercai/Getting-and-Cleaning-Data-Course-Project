@@ -73,11 +73,17 @@ data4 <- tdata
 # Step 5
 # From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 ############
-# remove the ID, activity_label Col
-    data5 <- data4[,!(names(data4) %in% c("ID","activity_label"))]
-    aggdata <-aggregate(data5, by=list(subject = data5$subject_id, activity = data5$activity_id), FUN=mean, na.rm=TRUE)
-# remove the "subject","activity" Col
-    aggdata <- aggdata[,!(names(aggdata) %in% c("subject","activity"))]
+################
+# todo
+# the aggdata is not a tidy data set, need melt() or gather() func to conv to tidy data set
+###############
 
-    aggdata = merge(aggdata, activity_labels)
-    write.table(file="submit.txt", x=aggdata, row.name=FALSE)
+
+# remove the ID, activity_label Col
+#    data5 <- data4[,!(names(data4) %in% c("ID","activity_label")]
+#    aggdata <-aggregate(data5, by=list(subject = data5$subject_id, activity = data5$activity_id), FUN=mean, na.rm=TRUE)
+## remove the "subject","activity" Col
+#    aggdata <- aggdata[,!(names(aggdata) %in% c("subject","activity"))]
+#
+#    aggdata = merge(aggdata, activity_labels)
+#    write.table(file="submit.txt", x=aggdata, row.name=FALSE)
