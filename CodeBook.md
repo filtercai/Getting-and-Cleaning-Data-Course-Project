@@ -1,12 +1,10 @@
 # Codebook for Getting and Cleaning Data Course Project
 
----
+## About
+This is the course project for the Getting and Cleaning Data Coursera course. 
 
-title: "Codebook for Getting and Cleaning Data Course Project"
-author: "filter u2chcai@gmail.com"
-date: "2015-11-22"
-
----
+Filter Cai
+2015-11-22
 
 ## Project Description
 This is the course project for the Getting and Cleaning Data Coursera course. 
