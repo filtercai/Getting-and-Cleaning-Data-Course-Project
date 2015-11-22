@@ -51,6 +51,7 @@
 #clear temp var
     rm(s_features)
     
+
 ############
 # Step 3
 # Uses descriptive activity names to name the activities in the data set
@@ -59,6 +60,7 @@
     activity_labels = read.table("UCI HAR Dataset/activity_labels.txt", col.names=c("activity_id", "activity_label"))
 # merge
     data3 <- merge(data2,activity_labels)
+
 
 ############
 # Step 4
@@ -80,6 +82,7 @@
 # clear temp var
   rm(list=c("tdata","i","coln","num"))
   
+
 ############
 # Step 5
 # From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
@@ -101,3 +104,4 @@
 
 ##clear tmp var
     rm(list=c("activity_labels","features","tdata"))
+#END
