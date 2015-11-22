@@ -98,9 +98,9 @@
     
     write.table(file="submit.txt", x=data5, row.name=FALSE)
     print("you can check the result for the step1 to step5 by")
-    print("data1  --> Step 1;         data2  --> Step 2;")
-    print("data3  --> Step 3          data4  --> Step 4;")
-    print("data5  --> Step 5")
+    print("Step 1 result  --> data1;         Step 2  --> data2;")
+    print("Step 3 result  --> data3          Step 4  --> data4;")
+    print("Step 5 result  --> data5")
 
 ##clear tmp var
     rm(list=c("activity_labels","features","tdata"))
